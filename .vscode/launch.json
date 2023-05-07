@@ -14,7 +14,9 @@
             ],
             "runtimeArgs": [
                 "--experimental-specifier-resolution=node",
-                "--loader", "ts-node/esm"
+                "--experimental-loader", "./loader.mjs",
+                "--experimental-loader", "ts-node/esm",
+                "--no-warnings"
             ]
         }
     ]
