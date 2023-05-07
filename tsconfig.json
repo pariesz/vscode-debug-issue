@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "types": ["mocha", "node" ],
+    "typeRoots": [ "./node_modules/@types" ],
+    "module": "ESNext",
+    "moduleResolution": "node"
+  },
+  "exclude": [
+    "node_modules",
+  ]
+}
