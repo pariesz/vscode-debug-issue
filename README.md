@@ -1,8 +1,9 @@
 
-## Versions
+# VSCode debugging with Mocha + Typescript + ESM
 
-* node: v19.3.0
-* npm: 9.2.0
+Debugging works if the `--experimental-specifier-resolution=node` `runtimeArgs` is removed from `launch.json` and the import in `project.test.ts` changed to `import { TRUE } from "./project.js`. This is a pretty hacky workaround I would rather not do.
+
+`npm test` works using the same `experimental-specifier-resolution=node` option
 
 ## Mocha + TypeScript + ESM
 
@@ -31,9 +32,7 @@ TypeError [ERR_UNKNOWN_FILE_EXTENSION]: Unknown file extension "" for C:\Users\p
 Process exited with code 1
 ```
 
-## Notes
+## Environment
 
-* Debugging works if the `--experimental-specifier-resolution=node` `runtimeArgs` is removed from `launch.json` and the import in `project.test.ts` changed to `import { TRUE } from "./project.js`. This is a pretty hacky workaround I would rather not do.
-
-* `npm test` works using the same `experimental-specifier-resolution=node` option
-
+* node: v19.3.0
+* npm: 9.2.0
