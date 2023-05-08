@@ -10,7 +10,7 @@
                 "--no-timeouts",
                 "--colors",
                 "--inspect-brk",
-                "*.test.ts"
+                "${relativeFile}"
             ],
             "runtimeArgs": [
                 "--experimental-specifier-resolution=node",

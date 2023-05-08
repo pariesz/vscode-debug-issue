@@ -1,5 +1,13 @@
 
-# Debug Mocha + Typescript + ESM ni VS Code
+# Mocha + Typescript + ESM debugging in VS Code
+
+## Run Instructions
+
+* run `npm i`
+* open [project.test.ts](./project.test.ts) in VS Code
+* press <kbd>F5</kbd>
+
+The launch configuration uses `${relativeFile}` arg so the test file must be open.
 
 ## Research
 
